@@ -1,0 +1,517 @@
+main{
+    background-image: url("images/fondo320.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left right;
+}
+.logo{
+    // background-color: green;
+}
+.header{
+    // background-color: red;
+    .comming{
+        &__title{
+            text-align: center;
+            margin-left: -1rem;
+            // color: $clAlterno;
+    }
+    }
+    
+}
+.content{
+    // background-color: rebeccapurple;
+    .promotion{
+        &__text{
+            
+        }
+        &__question{
+            margin-top: .5rem;
+        }
+        &__answer{
+            margin-top: .5rem;
+            text-align: justify;
+            line-height: 1.2rem;
+        }
+    }
+    
+}
+.image{
+        background-image: url("images/image.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right right;
+    }
+.promo{
+    // background-color: rosybrown;
+    .call{
+        margin-left: -1.5rem;
+        margin-top: 1.5rem;
+        z-index: 10;
+        &__text{
+
+        }
+        .name{
+
+        }
+    }
+        
+    .action{
+        z-index: 10;
+        transition: all .5s ease-out;
+        &__button{
+            // background-color: royalblue;
+            // background: linear-gradient(to right, rgba(47,53,139,1) 0%, rgba(43,171,226,1) 100%);
+            height: 30px;
+            border-radius: 15px;
+            &--text{
+                a:hover{
+                    // text-transform: uppercase;
+                    // transition: all .5s ease-out;
+                }
+                
+            }
+        }
+        
+    }       
+}
+.link{
+            // background-color: yellow;
+            border: 1px solid transparent;
+            background: linear-gradient(270deg, #2f358b, #2babe2,#2f358b);
+            background-size: 515% 515%;
+            animation: degradado 5s ease infinite;
+            @keyframes degradado {
+                0%{background-position:0% 50%}
+                50%{background-position:100% 50%}
+                100%{background-position:0% 50%}
+            }
+            transition: all .3s ease-out;
+        }
+.info{
+    margin-top: 1rem;
+    &__text{
+        // background-color: seashell;
+        display: flex;
+        justify-content: center;
+        font-size: 0.4rem;
+        color: $textos;
+    }
+    &__logo{
+        display: flex;
+        justify-content: center;
+        // background-color: slateblue;
+    }
+    picture{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+@include mQ(smallS){
+    body{
+        // background-color: rebeccapurple;
+        main{
+            background-image: url("images/fondo480.jpg");
+            // background-repeat: no-repeat;
+            // background-size: cover;
+            // background-position: left right;
+        }
+        .image{
+            // background-image: url("images/image.png");
+            // background-repeat: no-repeat;
+            // background-size: cover;
+            // background-position: right right;
+        }
+    }
+}
+@include mQ(mediumS){
+    body{
+    // background-color: yellowgreen;
+        main{
+            background-image: url("images/fondo600.jpg");
+            // background-repeat: no-repeat;
+            // background-size: cover;
+            // background-position: left right;
+        }
+        .image{
+            // background-image: url("images/image.png");
+            // background-repeat: no-repeat;
+            // background-size: contain;
+            // background-position: right right;
+        }
+    }
+}
+@include mQ(wideS){
+    body{
+    // background-color: teal;
+        main{
+            background-image: url("images/fondo760.jpg");
+            // background-repeat: no-repeat;
+            // background-size: cover;
+            // background-position: left right;
+        }
+        .logo{
+            // background-color: green;
+            margin-top: 1.5rem;
+        }
+        .header{
+        // background-color: red;
+            .comming{
+                &__title{
+                    text-align: left;
+                    margin-left: -2.7rem;
+                    margin-top: 2rem;
+                }
+            }
+            
+        }
+        .content{
+            // background-color: rebeccapurple;
+            margin-left: -2.7rem;
+            .promotion{
+                &__text{
+                    
+                }
+                &__question{
+                    
+                }
+                &__answer{
+                    text-align: justify;
+                }
+            }
+            
+        }
+        .promo{
+            // background-color: rosybrown;
+            // grid-column: 2 / 12;
+            // grid-row: 9 / 13;
+            // display: grid;
+            // grid-template-columns: repeat(8, 1fr);
+            // grid-template-rows: repeat(8, 1fr);
+            .call{
+                margin-left: -2.7rem;
+                margin-top: 2rem;
+                // &__text{
+
+                // }
+                // .name{
+
+                // }
+            }
+                
+            .action{
+                // &__button{
+                //     // background-color: royalblue;
+                //     display: flex;
+                //     justify-content: center;
+                //     align-items: center;
+                //     &--text{
+                //     }
+                // }
+            }
+                
+                
+        }
+    }
+}
+@include mQ(largeS){
+    body{
+    // background-color: violet;
+        main{
+            background-image: url("images/fondo920.jpg");
+            // background-repeat: no-repeat;
+            // background-size: cover;
+            // background-position: left right;
+        }
+        .logo{
+            // background-color: green;
+            margin-top: 2.5rem;
+            margin-left: -1rem;
+        }
+        .header{
+        // background-color: red;
+            .comming{
+                &__title{
+                    text-align: left;
+                    margin-left: -2.7rem;
+                    margin-top: 1.5rem;
+                    font-size: 1.5rem;
+                }
+            }
+            
+        }
+        .content{
+            // background-color: rebeccapurple;
+            margin-top: 0.8rem;
+            margin-left: -2.7rem;
+            .promotion{
+                &__text{
+                    font-size: 1.2rem;
+                }
+                &__question{
+                    font-size: 1.8rem;
+                    margin-top: 0.8rem;
+                }
+                &__answer{
+                    text-align: justify;
+                    line-height: 1.2rem;
+                    margin-top: 0.6rem;
+                }
+            }
+            
+        }
+        .promo{
+            // background-color: rosybrown;
+            // grid-column: 2 / 12;
+            // grid-row: 9 / 13;
+            // display: grid;
+            // grid-template-columns: repeat(8, 1fr);
+            // grid-template-rows: repeat(8, 1fr);
+            .call{
+                margin-left: 2rem;
+                margin-top: 2.8rem;
+                &__text{
+                    font-size: 1.8rem;
+                    line-height: 2.8rem;
+                }
+                // .name{
+
+                // }
+            }
+                
+            .action{
+                &__button{
+                    height: 40px;
+                    border-radius: 20px;
+                    // background-color: royalblue;
+                    // display: flex;
+                    // justify-content: center;
+                    // align-items: center;
+                    &--text{
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+                
+                
+        }
+    }
+}
+@include mQ(xlS){
+    body{
+    // background-color: fuchsia;
+        main{
+                background-image: url("images/fondo1200.jpg");
+                // background-repeat: no-repeat;
+                // background-size: cover;
+                // background-position: left right;
+            }
+        .logo{
+            // background-color: green;
+            // margin-top: 2.5rem;
+            // margin-left: -1rem;
+        }
+        .header{
+        // background-color: red;
+            .comming{
+                &__title{
+                    // text-align: left;
+                    // margin-left: -2.7rem;
+                    // margin-top: 1.5rem;
+                    // font-size: 1.5rem;
+                }
+            }
+            
+        }
+        .content{
+            // background-color: rebeccapurple;
+            margin-top: 0.5;
+            margin-left: -6rem;
+            padding-right: 1.5rem;
+            .promotion{
+                &__text{
+                    font-size: 1.2rem;
+                }
+                &__question{
+                    font-size: 1.8rem;
+                    margin-top: 0.8rem;
+                }
+                &__answer{
+                    text-align: justify;
+                    line-height: 1.2rem;
+                    margin-top: 0.6rem;
+                }
+            }
+            
+        }
+        .promo{
+            // background-color: rosybrown;
+            // grid-column: 2 / 12;
+            // grid-row: 9 / 13;
+            // display: grid;
+            // grid-template-columns: repeat(8, 1fr);
+            // grid-template-rows: repeat(8, 1fr);
+            .call{
+                margin-left: 2rem;
+                margin-top: 2.8rem;
+                &__text{
+                    font-size: 1.8rem;
+                    line-height: 2.8rem;
+                }
+                // .name{
+
+                // }
+            }
+                
+            .action{
+                &__button{
+                    height: 40px;
+                    border-radius: 20px;
+                    // background-color: royalblue;
+                    // display: flex;
+                    // justify-content: center;
+                    // align-items: center;
+                    &--text{
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+                
+                
+        }
+        // .link{
+        //     // background-color: yellow;
+        //     border: 1px solid transparent;
+        //     background: linear-gradient(270deg, #2f358b, #2babe2,#2f358b);
+        //     background-size: 515% 515%;
+        //     animation: degradado 5s ease infinite;
+        //     @keyframes degradado {
+        //         0%{background-position:0% 50%}
+        //         50%{background-position:100% 50%}
+        //         100%{background-position:0% 50%}
+        //     }
+        //     transition: all .3s ease-out;
+        // }
+        .link:hover {
+            border: 2px solid white;
+            border-radius: 30px;
+            transition: all .5s ease-out;
+            
+        }
+    }
+}
+@include mQ(opS){
+    body{
+    // background-color: fuchsia;
+    main{
+            background-image: url("images/fondo1366.jpg");
+            // background-repeat: no-repeat;
+            // background-size: contain;
+            // background-position: left right;
+        }
+        .image{
+            // display: none;
+            // background-image: url("images/image.png");
+            // background-repeat: no-repeat;
+            // background-size: contain;
+            // background-position: right right;
+        }
+        .logo{
+            // background-color: green;
+            // margin-top: 2.5rem;
+            margin-left: -4rem;
+        }
+        .header{
+        // background-color: red;
+            .comming{
+                &__title{
+                    // text-align: left;
+                    margin-left: 0;
+                    margin-top: 0;
+                    font-size: 2rem;
+                }
+            }
+            
+        }
+        .content{
+            // background-color: rebeccapurple;
+            margin-top: 3.5rem;
+            margin-left: 3.5rem;
+            padding-right: 0;
+            .promotion{
+                &__text{
+                    font-size: 1.5rem;
+                }
+                &__question{
+                    font-size: 2.5rem;
+                    margin-top: 0.8rem;
+                }
+                &__answer{
+                    text-align: justify;
+                    line-height: 1.2rem;
+                    margin-top: 0.6rem;
+                    font-size: 1.2rem;
+                }
+            }
+            
+        }
+        .promo{
+            // background-color: rosybrown;
+            // grid-column: 2 / 12;
+            // grid-row: 9 / 13;
+            // display: grid;
+            // grid-template-columns: repeat(8, 1fr);
+            // grid-template-rows: repeat(8, 1fr);
+            .call{
+                margin-left: 2.3rem;
+                margin-right: -7rem;
+                margin-top: 0;
+                &__text{
+                    font-size: 1.8rem;
+                    line-height: 2.8rem;
+                }
+                // .name{
+
+                // }
+            }
+                
+            .action{
+                &__button{
+                    height: 50px;
+                    border-radius: 30px;
+                    // background-color: royalblue;
+                    // display: flex;
+                    // justify-content: center;
+                    // align-items: center;
+                    &--text{
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+                
+                
+        }
+        .info{
+            margin-top: 2rem;
+            &__text{
+                // background-color: seashell;
+                // display: flex;
+                // justify-content: center;
+                font-size: 0.5rem;
+                // color: $textos;
+            }
+            &__logo{
+                // display: flex;
+                // justify-content: center;
+                // background-color: slateblue;
+            }
+            picture{
+                // display: flex;
+                // justify-content: center;
+            }
+        }
+    }
+}
+
